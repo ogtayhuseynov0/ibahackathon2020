@@ -9,13 +9,11 @@
           icon="menu"
           aria-label="Menu"
           @click="leftDrawerOpen = !leftDrawerOpen"
-        />
+        ></q-btn>
 
         <q-toolbar-title>
-          Quasar App
+          IBA Analytics
         </q-toolbar-title>
-
-        <div>Quasar v{{ $q.version }}</div>
       </q-toolbar>
     </q-header>
 
@@ -30,7 +28,7 @@
           header
           class="text-grey-8"
         >
-          Essential Links
+          Dashboard
         </q-item-label>
         <EssentialLink
           v-for="link in essentialLinks"
@@ -61,40 +59,16 @@ export default {
       leftDrawerOpen: false,
       essentialLinks: [
         {
-          title: 'Docs',
-          caption: 'quasar.dev',
-          icon: 'school',
+          title: 'Personal Analytics',
+          caption: 'Personal SME Analytics',
+          icon: 'graphic_eq',
           link: 'https://quasar.dev'
         },
         {
-          title: 'Github',
-          caption: 'github.com/quasarframework',
-          icon: 'code',
+          title: 'Differential Analytics',
+          caption: 'Analytical comparision between SME branches.',
+          icon: 'leak_remove',
           link: 'https://github.com/quasarframework'
-        },
-        {
-          title: 'Discord Chat Channel',
-          caption: 'chat.quasar.dev',
-          icon: 'chat',
-          link: 'https://chat.quasar.dev'
-        },
-        {
-          title: 'Forum',
-          caption: 'forum.quasar.dev',
-          icon: 'record_voice_over',
-          link: 'https://forum.quasar.dev'
-        },
-        {
-          title: 'Twitter',
-          caption: '@quasarframework',
-          icon: 'rss_feed',
-          link: 'https://twitter.quasar.dev'
-        },
-        {
-          title: 'Facebook',
-          caption: '@QuasarFramework',
-          icon: 'public',
-          link: 'https://facebook.quasar.dev'
         }
       ]
     }
